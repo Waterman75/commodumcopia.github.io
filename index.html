@@ -46,11 +46,24 @@
             width:75px;
             height:100px;
         }
-        .header-title{
+        .header-title {
             color: 4b58;
             text-align: left;
             margin-left: 10px;
             margin-bottom: 10px;
+        }
+        .search-container {
+            display: flex;
+            align-items: left;
+            input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .search-container img {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -67,6 +80,13 @@
         <a href="#winkelwagen">Contact</a>
         <a href="#bestellen">Contact</a>
     </nav>
+    <search>
+        <div class="search-container">
+            <input type="text"
+            placeholder="Zoeken...">
+            <img scr="Images/search-icon.jpeg" alt="Zoeken"
+        </div>
+    </search>
     <main>
         <h2>Home</h2>
         <p>Dit is de startpagina van mijn website. Hier kun je informatie vinden over verschillende onderwerpen.</p>
