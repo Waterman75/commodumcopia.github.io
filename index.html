@@ -71,6 +71,14 @@
             margin-left: 5px;
             cursor: pointer;
         }
+        .container {
+            display: flex;
+        }
+        .block {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #000;
+        }
     
     </style>
 </head>
@@ -98,6 +106,14 @@
         <p>Dit is de aanbieding van deze week.</p>
         <a href="#aanbiedingen">Klik hier voor alle aanbieidngen.</a>
     </main>
+    <submain>
+        <div class="container">
+            <div class="block">Aanbiedingblok-1</div>
+            <div class="block">Aanbiedingblok-2</div>
+            <div class="block">Aanbiedingblok-3</div>
+        </div>
+    </submain>
+
     <footer>
         <p>© 2024 Mijn Website</p>
     </footer>
