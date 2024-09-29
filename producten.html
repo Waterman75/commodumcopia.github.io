@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1664px, initial-scale=1.0">
+    <title>Producten</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #064886c0;
+            color: white;
+            padding: 2em;
+            text-align: center;
+        }
+
+        nav {
+            margin: 0;
+            padding: 1em;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+
+        search {
+            margin: 0;
+            padding: 1em;
+            background-color: #064886c0;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        news {
+            padding: 2em;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .left-img {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 50px;
+            width: 75px;
+            height: 100px;
+        }
+
+        .center-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-img {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+
+        .header-title {
+            color: 4b58;
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: left;
+
+            input[type="text"] {
+                padding: 5px;
+                font-size: 16px;
+            }
+        }
+
+        .search-container img {
+            width: 40px;
+            height: 40px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            text-align: left;
+        }
+
+        .block {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Images/shoppingcart-cc.png" alt="shoppingcart-logo" class="left-img">
+        <h1 class="header-title">Commodium Copia</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#producten">Producten</a>
+        <a href="#aanbiedingen">Aanbiedingen</a>
+        <a href="#winkelwagen">Winkelwagen</a>
+        <a href="#bestellen">Bestellen</a>
+    </nav>
+    <search>
+        <div class="search-container">
+            <input type="text" placeholder="Zoeken...">
+            <img src="Images/search-icon-blk.png" alt="Zoeken">
+        </div>
+    </search>
+    <main class="container">
+        <div>
+            <h2>Huidige aanbiedingsactie</h2>
+            <h3>Dit is de aanbieding van deze week.</h3>
+            <a href="#aanbiedingen">Klik hier voor alle aanbiedingen.</a>
+        </div>
+        <div class="center-img">
+            <img src="Images/bananas.png" alt="Bananen" style="  width:150px;
+            height:200px;">
+        </div>
+    </main>
+    <submain>
+        <div class="container">
+            <div class="block">
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+                <div class="right-img">
+                    <div>
+                        <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
+                height:100px;">
+                        <p>Prijs 1,50 euro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+                <div class="right-img">
+                    <div>
+                        <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
+                    height:100px;">
+                        <p>Prijs 1,50 euro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+                <div class="right-img">
+                    <div>
+                        <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
+                    height:100px;">
+                        <p>Prijs 1,50 euro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </submain>
+    <news class="container">
+        <div>
+            <h2>Het laatste nieuws</h2>
+            <p>Dit is een korte tekst met het nieuws bericht</p>
+            <a href="#nieuwsberichten">Klik hier voor het complete nieuwsbericht.</a>
+        </div>
+        <div class="center-img">
+            <img src="Images/news.png" alt="Nieuws" style="  width:150px;
+            height:200px;">
+        </div>
+    </news>
+    <info>
+        <div class="container">
+            <div class="block">
+                <h2>Social media links</h2>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            </div>
+            <div class="block">
+                <h2>Nieuwsbrief aanmelding</h2>
+                <a href="#nieuwsbrief">Nieuwsbrief</a>
+            </div>
+            <div class="block">
+                <h2>Klantenservice contactopties</h2>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+310123456789">Bel ons op +31 012 345 6789</a>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:info@comodiumcopia.com">Stuur ons een e-mail</a>
+                </div>
+                <div>
+                    <i class="fa fa-whatsapp"></i>
+                    <a href="https://wa.me/310123456789">Stuur ons een WhatsApp-bericht</a>
+                </div>
+            </div>
+        </div>
+    </info>
+    <footer>
+        <a href="#algemene-voorwaarden">Algemene voorwaarden</a>
+        <a href="#levering&verzending">Levering en verzending</a>
+        <a href="#privacybeleid">Privacybeleid</a>
+        <a href="#onze-organisatie">Onze organisatie</a>
+    </footer>
+</body>
+
+</html>
