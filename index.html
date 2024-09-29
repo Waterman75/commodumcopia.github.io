@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1664px, initial-scale=1.0">
@@ -11,33 +12,44 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #064886c0;
             color: white;
             padding: 2em;
             text-align: center;
         }
+
         nav {
             margin: 0;
             padding: 1em;
             background-color: #333;
         }
+
         nav a {
             color: white;
             margin: 0 1em;
             text-decoration: none;
         }
+
         search {
             margin: 0;
             padding: 1em;
             background-color: #064886c0;
         }
+
         main {
             padding: 2em;
         }
+
         news {
             padding: 2em;
         }
+
+        options {
+            padding: 2em;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -47,55 +59,64 @@
             width: 100%;
             bottom: 0;
         }
+
         .left-img {
             float: left;
             margin-right: 10px;
             margin-bottom: 50px;
-            width:75px;
-            height:100px;
+            width: 75px;
+            height: 100px;
         }
+
         .center-img {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .right-img {
             display: flex;
             justify-content: right;
             align-items: right;
         }
+
         .header-title {
             color: 4b58;
             text-align: left;
             margin-left: 10px;
             margin-bottom: 10px;
         }
+
         .search-container {
             display: flex;
             align-items: left;
+
             input[type="text"] {
-            padding: 5px;
-            font-size: 16px;
+                padding: 5px;
+                font-size: 16px;
             }
         }
+
         .search-container img {
             width: 40px;
             height: 40px;
             margin-left: 5px;
             cursor: pointer;
         }
+
         .container {
             display: flex;
             text-align: left;
         }
+
         .block {
             flex: 1;
             padding: 10px;
             border: 1px solid #000;
         }
-    
     </style>
 </head>
+
 <body>
     <header>
         <img src="Images/shoppingcart-cc.png" alt="shoppingcart-logo" class="left-img">
@@ -110,9 +131,8 @@
     </nav>
     <search>
         <div class="search-container">
-            <input type="text"
-            placeholder="Zoeken...">
-        <img src="Images/search-icon-blk.png" alt="Zoeken">
+            <input type="text" placeholder="Zoeken...">
+            <img src="Images/search-icon-blk.png" alt="Zoeken">
         </div>
     </search>
     <main class="container">
@@ -129,38 +149,38 @@
     <submain>
         <div class="container">
             <div class="block">
-               <h2>Product</h2> 
-               <p>Omschrijving product</p> 
-               <a href="#product">Product</a>
-               <div class="right-img">
-                <div>
-                    <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
-                height:100px;">
-                <p>Prijs 1,50 euro</p>
-                </div>
-               </div>
-            </div>
-            <div class="block">
-                <h2>Product</h2> 
-                <p>Omschrijving product</p> 
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
                 <a href="#product">Product</a>
                 <div class="right-img">
                     <div>
                         <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
-                    height:100px;">
-                    <p>Prijs 1,50 euro</p>
+                height:100px;">
+                        <p>Prijs 1,50 euro</p>
                     </div>
                 </div>
             </div>
             <div class="block">
-                <h2>Product</h2> 
-                <p>Omschrijving product</p> 
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
                 <a href="#product">Product</a>
                 <div class="right-img">
                     <div>
                         <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
                     height:100px;">
-                    <p>Prijs 1,50 euro</p>
+                        <p>Prijs 1,50 euro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+                <div class="right-img">
+                    <div>
+                        <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
+                    height:100px;">
+                        <p>Prijs 1,50 euro</p>
                     </div>
                 </div>
             </div>
@@ -175,6 +195,38 @@
         <p>Dit is een korte tekst met het nieuws bericht</p>
         <a href="#nieuwsberichten">Klik hier voor het complete nieuwsbericht.</a>
     </news>
+    <option>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="container">
+            <div class="block">
+                <h2>Social media links</h2>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+
+
+            </div>
+            <div class="block">
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+
+            </div>
+            <div class="block">
+                <h2>Product</h2>
+                <p>Omschrijving product</p>
+                <a href="#product">Product</a>
+
+            </div>
+        </div>
+
+
+    </option>
     <footer>
         <a href="#algemene-voorwaarden">Algemene voorwaarden</a>
         <a href="#levering&verzending">Levering en verzending</a>
@@ -182,4 +234,5 @@
         <a href="#onze-organisatie">Onze organisatie</a>
     </footer>
 </body>
+
 </html>
