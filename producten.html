@@ -108,7 +108,9 @@
         }
 
         .container {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 0px;
             flex-wrap: wrap;
             text-align: left;
         }
