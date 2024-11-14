@@ -108,6 +108,16 @@
             margin-bottom: 10px;
         }
 
+        #search {
+            margin-bottom: 2rem;
+        }
+
+        #search input {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        
         .search-container {
             display: flex;
             align-items: left;
@@ -160,10 +170,14 @@
     </nav>
     <search>
         <!-- Zoekbalk -->
-        <div class="search-container">
+        <section id="search">
+            <input type="text" placeholder="Zoek een product">
+            <img src="Images/search-icon-blk.png" alt="Zoeken">
+        </section>
+        <!-- <div class="search-container">
             <input type="text" placeholder="Zoeken...">
             <img src="Images/search-icon-blk.png" alt="Zoeken">
-        </div>
+        </div> -->
     </search>
     <main class="container">
         <!-- Huidige productcategorie -->
