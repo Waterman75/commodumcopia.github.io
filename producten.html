@@ -39,6 +39,21 @@
             padding: 10xp;
         }
 
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
         search {
             margin: 0;
             padding: 1em;
@@ -157,7 +172,15 @@
     </header>
     <nav>
         <!-- Navigatie menu -->
-        <div style="text-align: left;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="producten.html">Producten</a></li>
+            <li><a href="aanbiedingen">Aanbiedingen</a></li>
+            <li><a href="winkelwagen">Winkelwagen</a></li>
+            <li><a href="bestellen">Bestellen</a></li>
+            <li><a href="account">Account</a></li>
+        </ul>
+        <!-- <div style="text-align: left;">
             <a href="index.html">Home</a>
             <a href="producten.html">Producten</a>
             <a href="aanbiedingen">Aanbiedingen</a>
@@ -166,11 +189,11 @@
         </div>
         <div style="text-align: right;">
             <a href="account">Account</a>
-        </div>
+        </div> -->
     </nav>
     <search>
         <!-- Zoekbalk -->
-        <section id="search">
+        <section class="search-container">
             <input type="text" placeholder="Zoek een product">
             <img src="Images/search-icon-blk.png" alt="Zoeken">
         </section>
