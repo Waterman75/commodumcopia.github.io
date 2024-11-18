@@ -115,68 +115,80 @@
             background-color: #005a9e;
         }
 
-        footer {
-            background-color: #0070c0;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
+        table {
             width: 100%;
-            bottom: 0;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: white;
         }
 
-        footer nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
 
-        footer nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
+            text-align: footer {
+                background-color: #0070c0;
+                color: white;
+                text-align: center;
+                padding: 1rem;
+                position: relative;
+                width: 100%;
+                bottom: 0;
+            }
 
-        footer nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+            footer nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
 
-        .block {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #000;
-        }
+            footer nav ul li {
+                display: inline;
+                margin: 0 1rem;
+            }
 
-        .category {
-            margin-bottom: 20px;
-        }
+            footer nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
+            .block {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #000;
+            }
 
-        .product {
-            border: solid 1px #000;
-            text-align: center;
-        }
+            .category {
+                margin-bottom: 20px;
+            }
 
-        .center-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
 
-        .container {
-            display: flex;
-            text-align: left;
-        }
+            .product {
+                border: solid 1px #000;
+                text-align: center;
+            }
 
-        .info-block {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #000;
-        }
+            .center-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                display: flex;
+                text-align: left;
+            }
+
+            .info-block {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #000;
+            }
     </style>
 </head>
 
@@ -227,19 +239,14 @@
                         elit.</p>
                 </div> <button class="add-button">Voeg toe</button>
             </div>
-            <div class="category">
-                <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
-            height:100px;">Productcategorie 1
-            </div>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="Images/bananas.png" alt="Bananen" style="  width:75px;
-                height:100px;">
-                    <h3>Product 1</h3>
-                    <p>Korte omschrijving</p>
-                </div>
-
-            </div>
+            <table>
+                <tr>
+                    <th>Productomschrijving</th>
+                </tr>
+                <tr>
+                    <td>Volledige productomschrijving. Kan HTML bevatten</td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>
