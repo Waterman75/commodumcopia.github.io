@@ -1,164 +1,136 @@
 <!DOCTYPE html>
 <html lang="nl">
-
+   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productcategorieën</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        /* Stijl voor blokken met flex, padding en rand */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #0070c0;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .header-title {
-            color: 4b58;
-            text-align: center;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
-
-        .left-img {
-            float: left;
-            margin-right: 10px;
-            margin-bottom: 50px;
-            width: 75px;
-            height: 100px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
-        .search-container {
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: left;
-
-            input[type="text"] {
-                width: 50%;
-                padding: 0.5rem;
-                font-size: 1rem;
-            }
-        }
-
-        .search-container img {
-            width: 40px;
-            height: 40px;
-            margin-left: 5px;
-            cursor: pointer;
-        }
-
-        #bestellingen {
-            display: list-item;
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ddd;
-            margin-bottom: 20px;
-        }
-
-        .order {
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
-        }
-
-        .order h3 {
-            margin: 0;
-        }
-
-        .order p {
-            margin: 5px 0;
-        }
-
-        .order a {
-            color: #0070c0;
-            text-decoration: none;
-        }
-
-        .order a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #0070c0;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-        }
-
-        footer nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        footer nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-
-        footer nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .container {
-            display: flex;
-            text-align: left;
-        }
-
-        .block {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #000;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: #0070c0;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .header-title {
+        margin: 0;
+    }
+    
+    .left-img {
+        float: left;
+        margin-right: 10px;
+        width: 75px;
+        height: 100px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    #bestellingen {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    
+    .order {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+    
+    .order h3 {
+        margin: 0;
+    }
+    
+    .order p {
+        margin: 5px 0;
+    }
+    
+    .order a {
+        color: #0070c0;
+        text-decoration: none;
+    }
+    
+    .order a:hover {
+        text-decoration: underline;
+    }
+    
+    footer {
+        background-color: #0070c0;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    footer nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    footer nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+    
+    footer nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .block {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #000;
+    }
+</style>
 </head>
-
 <body>
     <header>
-        <!-- Logo afbeelding -->
         <img src="Images/shoppingcart-cc.png" alt="shoppingcart-logo" class="left-img">
-        <!-- Titel van de website -->
         <h1 class="header-title">Commodum Copia</h1>
         <nav>
-            <!-- Navigatie menu -->
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="producten.html">Producten</a></li>
-                <li><a href="aanbiedingen">Aanbiedingen</a></li>
-                <li><a href="winkelwagen">Winkelwagen</a></li>
-                <li><a href="bestellen">Bestellen</a></li>
-                <li><a href="account">Account</a></li>
+                <li><a href="aanbiedingen.html">Aanbiedingen</a></li>
+                <li><a href="winkelwagen.html">Winkelwagen</a></li>
+                <li><a href="bestellen.html">Bestellen</a></li>
+                <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
@@ -170,49 +142,22 @@
                 <h3>Openstaande bestellingen</h3>
                 <p>Datum: 21-11-2024</p>
                 <p>Tijd: 12:00</p>
-                <p>Adres: Voorbeeldstraat 1, 1234 AB, Stad</p> <a href="#">Bestelde producten</a>
+                <p>Adres: Voorbeeldstraat 1, 1234 AB, Stad</p>
+                <a href="#">Bestelde producten</a>
             </div>
-        </div>
             <div class="order">
                 <img src="Images/shopping-cart-order.jpg" alt="shoppingcart-logo-order" class="left-img">
                 <h3>Eerdere bestellingen</h3>
                 <p>Datum: 07-11-2024</p>
                 <p>Tijd: 15:00</p>
-                <p>Adres: Voorbeeldstraat 2, 5678 CD, Stad</p> <a href="#">Bestelde producten</a>
+                <p>Adres: Voorbeeldstraat 2, 5678 CD, Stad</p>
+                <a href="#">Bestelde producten</a>
             </div>
-            <div class="order">
-                <img src="Images/shopping-cart-order.jpg" alt="shoppingcart-logo-order" class="left-img">
-                <h3>Eerdere bestellingen</h3>
-                <p>Datum: 01-11-2024</p>
-                <p>Tijd: 15:00</p>
-                <p>Adres: Voorbeeldstraat 2, 5678 CD, Stad</p> <a href="#">Bestelde producten</a>
-            </div>
-            <div class="order">
-                <img src="Images/shopping-cart-order.jpg" alt="shoppingcart-logo-order" class="left-img">
-                <h3>Eerdere bestellingen</h3>
-                <p>Datum: 28-10-2024</p>
-                <p>Tijd: 15:00</p>
-                <p>Adres: Voorbeeldstraat 2, 5678 CD, Stad</p> <a href="#">Bestelde producten</a>
-            </div>
-            <div class="order">
-                <img src="Images/shopping-cart-order.jpg" alt="shoppingcart-logo-order" class="left-img">
-                <h3>Eerdere bestellingen</h3>
-                <p>Datum: 21-10-2024</p>
-                <p>Tijd: 15:00</p>
-                <p>Adres: Voorbeeldstraat 2, 5678 CD, Stad</p> <a href="#">Bestelde producten</a>
-            </div>
-            <div class="order">
-                <img src="Images/shopping-cart-order.jpg" alt="shoppingcart-logo-order" class="left-img">
-                <h3>Eerdere bestellingen</h3>
-                <p>Datum: 14-10-2024</p>
-                <p>Tijd: 15:00</p>
-                <p>Adres: Voorbeeldstraat 2, 5678 CD, Stad</p> <a href="#">Bestelde producten</a>
-            </div>
+            <!-- Voeg hier meer bestellingen toe -->
+        </div>
     </main>
     <footer>
-        <!-- Footer -->
         <div class="container">
-            <!-- Social media -->
             <section class="block">
                 <h2>Social media links</h2>
                 <a href="https://www.facebook.com" class="fa fa-facebook"></a>
@@ -248,7 +193,5 @@
             </ul>
         </nav>
     </footer>
-    </main>
 </body>
-
 </html>
